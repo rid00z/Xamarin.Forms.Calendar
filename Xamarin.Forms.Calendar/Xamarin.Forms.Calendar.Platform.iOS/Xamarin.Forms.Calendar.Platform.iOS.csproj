@@ -47,7 +47,6 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CalendarViewRenderer.cs" />
     <Compile Include="Controls\CalendarMonthView.cs" />

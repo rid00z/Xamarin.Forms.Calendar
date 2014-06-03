@@ -55,23 +55,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalendarCellView.cs" />
-    <Compile Include="CalendarGridView.cs" />
-    <Compile Include="CalendarPickerView.cs" />
-    <Compile Include="CalendarRowView.cs" />
-    <Compile Include="MonthAdapter.cs" />
-    <Compile Include="MonthCellDescriptor.cs" />
-    <Compile Include="MonthDescriptor.cs" />
-    <Compile Include="MonthView.cs" />
     <Compile Include="ResourceIdManger.cs" />
-    <Compile Include="Logr.cs" />
-    <Compile Include="CalendarViewRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarCellView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarGridView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarPickerView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\CalendarRowView.cs" />
+    <Compile Include="CalendarViewRenderer.cs" />
+    <Compile Include="MonoDroid.TimesSquare\Logr.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthView.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthDescriptor.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthCellDescriptor.cs" />
+    <Compile Include="MonoDroid.TimesSquare\MonthAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="packages.config" />
     <None Include="Resources\layout\calendar_picker %28copy%29.2xml" />
+    <None Include="MonoDroid.TimesSquare\License.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml">
@@ -117,5 +118,8 @@
       <Project>{F382E89E-8745-4AD0-AF1F-F96C461B4CE4}</Project>
       <Name>Xamarin.Forms.Calendar</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MonoDroid.TimesSquare\" />
   </ItemGroup>
 </Project>
