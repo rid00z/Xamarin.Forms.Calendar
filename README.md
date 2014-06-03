@@ -3,9 +3,7 @@
 
 ![Alt text](http://www.michaelridland.com/wp-content/uploads/2014/06/platform-image.png) 
 
-### Please see this blog post for more info: 
-
-http://www.michaelridland.com/xamarin/xamarin-forms-contest/
+### The common code that used for the UI:
 
 ```cs
 public class SampleCalendarPage : ContentPage 
@@ -37,3 +35,25 @@ public class SampleCalendarPage : ContentPage
 	}
 }
 ```
+
+### The (Android)platform code:
+```cs
+Xamarin.Forms.Forms.Init (this, bundle);
+SetPage (App.GetMainPage ());
+```
+### The (iOS)platform code:
+```cs
+window.RootViewController = App.GetMainPage ().CreateViewController ();
+```
+
+### The (Windows Phone)platform code
+
+```cs
+Content = Xamarin.Forms.CalendarSampleApp.App.GetMainPage().ConvertPageToUIElement(this);
+```
+
+Now this is a trivial app, but as you can imagine as the application becomes more complex your UI code will stay in your common library and work across all platforms.
+
+### Please see this blog post for more info: 
+
+http://www.michaelridland.com/xamarin/xamarin-forms-contest/
